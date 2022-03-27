@@ -14,7 +14,9 @@ const users=[]
 
 const server=http.createServer(app)
 
-server.listen(6789,()=>{
+const port=6789 ||process.env.PORT
+
+server.listen(port,()=>{
     console.log("I am Listening at 6789")
 })
 
